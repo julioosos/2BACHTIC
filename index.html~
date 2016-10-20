@@ -12,7 +12,11 @@
 	<etiquetainventada1><br></etiquetainventada1>
 	</head>
 	<!--Fin del encabezado-->
-	<body bgcolor=#A9E2F3>
+<<<<<<< HEAD
+	<body bgcolor=#A9E2F4>
+=======
+	<body bgcolor="black">
+>>>>>>> 435f297c2e9de69233b2037ef7ad26c30cb08503
 		<br> </br>
 
 
