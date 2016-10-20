@@ -17,6 +17,7 @@
     font-weight: bold;
 	}
 .d {  
+    border: 1px line #82ABB7;
     background-color: #fff;
 	width: 580px;
 	height: 100px;
