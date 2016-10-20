@@ -1,0 +1,59 @@
+<html lang="es-ES">
+	<title>Formulario web</title>
+	<meta charset="UTF-8">
+	<!--Inicio del encabezado-->
+	<head>
+	<script src="script.js"></script>
+<link rel="shortcut icon" href="http://s1.postimg.org/7263p7n7v/favicon.png">
+<link rel="stylesheet" type="text/css" href="estilo.css" />
+	<div class="b">
+		<font class="a" size=12 >Alberto Gómez Cabrera</font>
+	</div>
+	<etiquetainventada1><br></etiquetainventada1>
+	</head>
+	<!--Fin del encabezado-->
+	<body bgcolor=#A9E2F3>
+		<br> </br>
+
+
+<form>
+<table style="height: 350px" width="409" class="d">
+<tbody>
+<tr>
+<td class="d">
+<input type="text" class="texto" id="entrada"></input>
+</td>
+<td class="d">
+<div class="add" onclick="Anadir('valores','entrada')"><p class="borrar2">Añadir</p></div>
+</td>
+<td rowspan="2" class="d">
+<textarea class="textarea" rows="10" id="texto" cols="50">
+</textarea>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="d">
+<div class="valores">
+<select multiple name="o" id="valores" size="11">
+
+</select>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="d">
+<div class="borrar" onclick="Borrar(document.getElementById('valores'))"><p class="borrar2">Borrar</p></div>
+<br class="espacio">
+<div class="limpiar" onclick="Limpiar(document.getElementById('valores'))"><p class="borrar2">Limpiar</p></div>
+</td>
+<td class="d">
+<div class="procesar" onclick="Procesar('texto')"><p class="procesar2">Procesar</p></div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</form>
+
+	</body>
+</html>
