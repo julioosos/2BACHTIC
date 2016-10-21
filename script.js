@@ -5,8 +5,9 @@ function Limpiar(comboBox) {
     }        
 }
 
-function Borrar(x) {
-	x.remove(x.selectedIndex);        
+function Borrar(idlista) {
+	var opcion = document.getElementById(idlista);
+	opcion.remove(opcion.selectedIndex);        
 }
 
 
