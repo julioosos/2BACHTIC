@@ -7,8 +7,24 @@ function Limpiar(idtexto) {
 }
 
 function Borrar(idlista) {
-	var opcion = document.getElementById(idlista);
-	opcion.remove(opcion.selectedIndex);        
+var idlista = document.getElementById(idlista);
+
+// Seleccionar las opciones
+var seleccionado = [];
+for (var i = 0; i < idlista.options.length; ++i)
+{
+    seleccionado[i] = idlista.options[i].selected;
+}
+
+// Eliminar las opciones seleccionadas
+i = idlista.options.length;
+while (i--)
+{
+    if (seleccionado[i])
+    {
+        idlista.remove(i);
+    }
+}
 }
 
 
