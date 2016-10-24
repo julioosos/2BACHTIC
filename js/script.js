@@ -1,31 +1,30 @@
 
-function Limpiar(idtexto) {
-    var comboBox = document.getElementById(idtexto);
-    while (comboBox.options.length > 0) {                
-        comboBox.remove(0);
-    }        
-}
+function Limpiar(idlista) {
+    var opcion = document.getElementById(idlista)
+    while (opcion.options.length > 0) {                
+        opcion.remove(0);
+    }
+}        
 
 function Borrar(idlista) {
-	var idlista = document.getElementById(idlista);
-
-	// Seleccionar las opciones
-	var seleccionado = [];
-	for (var i = 0; i < idlista.options.length; ++i)
-	{
-		seleccionado[i] = idlista.options[i].selected;
-	}
-
-	// Eliminar las opciones seleccionadas
-	i = idlista.options.length;
-	while (i--)
-	{
-		if (seleccionado[i])
-		{
-			idlista.remove(i);
-		}
-	}
+var idlista = document.getElementById(idlista);
+// Seleccionar las opciones
+var seleccionado = [];
+for (var i = 0; i < idlista.options.length; ++i)
+{
+    seleccionado[i] = idlista.options[i].selected;
 }
+// Eliminar las opciones seleccionadas
+i = idlista.options.length;
+while (i--)
+{
+    if (seleccionado[i])
+    {
+        idlista.remove(i);
+    }
+}
+}
+
 
 function Anadir(idlista,idvalor) {
     var option = document.createElement("option");
