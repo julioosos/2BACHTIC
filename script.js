@@ -1,6 +1,6 @@
 
 function Limpiar(idtexto) {
-    var comboBox = document.createElement("comboBox");
+    var comboBox = document.getElementById(idtexto);
     while (comboBox.options.length > 0) {                
         comboBox.remove(0);
     }        
