@@ -25,7 +25,6 @@ while (i--)
         idlista.remove(i);
     }
 }
-
 }
 
 function Anadir(idlista,idvalor) {
