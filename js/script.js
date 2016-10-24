@@ -8,14 +8,12 @@ function Limpiar(idlista) {
 
 function Borrar(idlista) {
 var idlista = document.getElementById(idlista);
-
 // Seleccionar las opciones
 var seleccionado = [];
 for (var i = 0; i < idlista.options.length; ++i)
 {
     seleccionado[i] = idlista.options[i].selected;
 }
-
 // Eliminar las opciones seleccionadas
 i = idlista.options.length;
 while (i--)
@@ -26,6 +24,7 @@ while (i--)
     }
 }
 }
+
 
 function Anadir(idlista,idvalor) {
     var option = document.createElement("option");
