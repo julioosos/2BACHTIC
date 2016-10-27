@@ -25,6 +25,12 @@ while (i--)
 }
 }
 
+function Seleccionar(idvalor,idlista) {
+    var valores = document.getElementById(idlista);
+    var seleccionado = valores.options.selectedIndex;
+    document.getElementById(idvalor).value=valores.options[seleccionado].value;
+}
+
 
 function Anadir(idlista,idvalor) {
     var option = document.createElement("option");
