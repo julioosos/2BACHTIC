@@ -30,6 +30,7 @@ function Anadir(idlista,idvalor) {
     var option = document.createElement("option");
     option.text = document.getElementById(idvalor).value;
     document.getElementById(idlista).add(option);
+    document.getElementById(idvalor).value="";
 }
 
 
