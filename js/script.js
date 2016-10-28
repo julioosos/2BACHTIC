@@ -47,8 +47,10 @@ function Anadir(idlista,idvalor) {
     document.getElementById(idvalor).value="";
 }
 
-function Procesar(idtexto) {
-	mostrarMensaje(idTexto);
+function Procesar() {
+    var valores = document.getElementById("valores2");
+    var seleccionado = valores.options.selectedIndex;
+    document.getElementById("textarea").innerHTML = "Procesando " + valores.options[seleccionado].value;
 }
 
 function mostrarMensaje(idtexto) {

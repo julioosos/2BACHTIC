@@ -31,13 +31,13 @@
 <div class="anadir" id="anadir" onclick="Anadir('valores','entrada')"><p id="textoanadir" class="borrar2">Añadir</p></div>
 </td>
 <td rowspan="2" class="d">
-<select class="desplegable">
-  <option value="A">Prueba A</option>
-  <option value="B">Prueba B</option>
-  <option value="C">Prueba C</option>
-  <option value="D">Prueba D</option>
+<select class="desplegable" id="valores2">
+  <option value="Prueba A">Prueba A</option>
+  <option value="Prueba B">Prueba B</option>
+  <option value="Prueba C">Prueba C</option>
+  <option value="Prueba D">Prueba D</option>
 </select>
-<textarea readonly="readonly" class="textarea" rows="10" id="texto" cols="50">
+<textarea readonly="readonly" class="textarea" id="textarea" rows="10" id="texto" cols="50">
 </textarea>
 </td>
 </tr>
@@ -61,7 +61,7 @@
 
 </td>
 <td class="d">
-<div class="procesar" onclick="Procesar('texto')"><p class="procesar2">Procesar</p></div>
+<div class="procesar" onclick="Procesar()"><p class="procesar2">Procesar</p></div>
 </td>
 </tr>
 </tbody>
