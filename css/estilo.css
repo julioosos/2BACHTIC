@@ -160,13 +160,13 @@ etiquetainventada1 {
 	height: 200px;
 	border: 2px solid #999;
 	width: 250px;
-	overflow: hidden;
 	border-radius: 8px;
         margin-top: -9px;
 }
 .valores select {
-    width: 300px;
+    width: 251px;
     border: none;
+    margin-top: 4px;
   }
 
 .textarea {
