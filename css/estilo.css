@@ -2,7 +2,7 @@
 	color:black;
 	margin:480px;
 	padding:10px;
-	text-align:centre;
+	text-align:center;
 	}
 
 .b {
@@ -27,7 +27,7 @@
    border-collapse: collapse;
    width: 80%;
     }
-body, head {
+   div {
     cursor:url(cursor.png),pointer;
 	font-family:Trebuchet MS;
     }

@@ -47,7 +47,10 @@ function Anadir(idlista,idvalor) {
     document.getElementById(idvalor).value="";
 }
 
-
 function Procesar(idtexto) {
+	mostrarMensaje(idTexto);
+}
+
+function mostrarMensaje(idtexto) {
     document.getElementById(idtexto).value = "Hola";
 }
