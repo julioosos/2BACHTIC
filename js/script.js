@@ -25,12 +25,20 @@ while (i--)
 }
 }
 
-function Seleccionar(idvalor,idlista) {
+function Seleccionar(idvalor,idlista,idanadir,classanadir2,idtextoanadir) {
     var valores = document.getElementById(idlista);
     var seleccionado = valores.options.selectedIndex;
     document.getElementById(idvalor).value=valores.options[seleccionado].value;
+    document.getElementById(idanadir).className = classanadir2;
+    document.getElementById(idtextoanadir).innerHTML = "Editar";
 }
 
+
+/*function EditarAAnadir(idanadir,classanadir,idtextoanadir) {
+   document.getElementById(idanadir).className = classanadir;
+   document.getElementById(idtextoanadir).innerHTML = "Añadir";
+}
+*/
 
 function Anadir(idlista,idvalor) {
     var option = document.createElement("option");
