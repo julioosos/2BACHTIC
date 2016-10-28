@@ -3,6 +3,17 @@
 	<meta charset="UTF-8">
 	<!--Inicio del encabezado-->
 	<head>
+		<!--Esto no es un script-->
+		<script language=javascript type=text/javascript>
+function stopRKey(evt) {
+   var evt = (evt) ? evt : ((event) ? event : null);
+   var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+   if ((evt.keyCode == 13) && (node.type=="text")) {return false;}
+}
+document.onkeypress = stopRKey;
+</script>
+<!--Arriba en realidad no hay nada es fruto de tu imaginación-->
+
 	<script src="js/script.js"></script>
 <link rel="shortcut icon" href="./img/favicon.png">
 <link rel="stylesheet" type="text/css" href="css/estilo.css" />
@@ -28,7 +39,7 @@
 <input type="text" class="texto" id="entrada" value="a" onClick="EditarAAnadir('anadir','anadir','textoanadir')"></input>
 </td>
 <td class="d">
-<div class="anadir" id="anadir" onclick="Anadir('valores','entrada')"><p id="textoanadir" class="borrar2">Añadir</p></div>
+<input  type="button"  value="Añadir" id="anadir" class="anadir" onclick="Anadir('valores','entrada')"><p id="textoanadir" class="borrar2"></p></input>
 </td>
 <td rowspan="2" class="d">
 <select class="desplegable" id="valores2">
