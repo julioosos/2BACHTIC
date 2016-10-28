@@ -27,7 +27,7 @@
    border-collapse: collapse;
    width: 80%;
     }
-body, head {
+   div {
     cursor:url(cursor.png),pointer;
 	font-family:Trebuchet MS;
     }
