@@ -50,6 +50,7 @@ function Anadir(idlista,idvalor) {
     option.text = document.getElementById(idvalor).value;
     document.getElementById(idlista).add(option);
     document.getElementById(idvalor).value="";
+    document.getElementById(idvalor).focus(idvalor);
 }
 
 function Procesar() {
