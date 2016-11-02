@@ -3,18 +3,32 @@
 	<meta charset="UTF-8">
 	<!--Inicio del encabezado-->
 	<head>
+		<!--Esto no es un script-->
+		<script language=javascript type=text/javascript>
+function stopRKey(evt) {
+   var evt = (evt) ? evt : ((event) ? event : null);
+   var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+   if ((evt.keyCode == 13) && (node.type=="text")) {return false;}
+}
+document.onkeypress = stopRKey;
+</script>
+<!--Arriba en realidad no hay nada es fruto de tu imaginación-->
+
 	<script src="js/script.js"></script>
-<link rel="shortcut icon" href="/home/usuario/2BACHTIC/img/favicon.png">
+<link rel="shortcut icon" href="./img/favicon.png">
 <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-	<div class="b">
+
+	</head>
+	<!--Fin del encabezado-->
+	
+
+	
+	<body bgcolor=#82ABB7>
+		<br> </br>
+		<div class="b">
 		<font class="a" size=12 >Formulario Web</font>
 	</div>
 	<etiquetainventada1><br></etiquetainventada1>
-	</head>
-	<!--Fin del encabezado-->
-
-	<body bgcolor=#82ABB7>
-		<br> </br>
 
 
 <center><form>
@@ -22,20 +36,26 @@
 <tbody>
 <tr>
 <td class="d">
-<input type="text" class="texto" id="entrada" value="a"></input>
+<input type="text" class="texto" id="entrada" value="a" onClick="EditarAAnadir('anadir','anadir','textoanadir')"></input>
 </td>
 <td class="d">
-<div class="add" onclick="Anadir('valores','entrada')"><p class="borrar2">Añadir</p></div>
+<input  type="button"  value="Añadir" id="anadir" class="anadir" onclick="Anadir('valores','entrada')"><p id="textoanadir" class="borrar2"></p></input>
 </td>
 <td rowspan="2" class="d">
-<textarea readonly="readonly" class="textarea" rows="10" id="texto" cols="50">
+<select class="desplegable" id="valores2">
+  <option value="Prueba A">Prueba A</option>
+  <option value="Prueba B">Prueba B</option>
+  <option value="Prueba C">Prueba C</option>
+  <option value="Prueba D">Prueba D</option>
+</select>
+<textarea readonly="readonly" class="textarea" id="textarea" rows="10" id="texto" cols="50">
 </textarea>
 </td>
 </tr>
 <tr>
 <td colspan="2" class="d">
 <div class="valores">
-<select multiple name="o" id="valores" size="11" onChange="Seleccionar('entrada','valores')">
+<select multiple name="o" id="valores" size="11" onChange="Seleccionar('entrada','valores','anadir','anadir2','textoanadir')">
 
 </select>
 </div>
@@ -49,11 +69,10 @@
 
 
 <div class="limpiar" onclick="Limpiar('valores')"><p class="borrar2">Limpiar</p></div>
-<button type="button" onclick="Seleccionar('entrada','valores')">Edit</button> 
 
 </td>
 <td class="d">
-<div class="procesar" onclick="Procesar('texto')"><p class="procesar2">Procesar</p></div>
+<div class="procesar" onclick="Procesar()"><p class="procesar2">Procesar</p></div>
 </td>
 </tr>
 </tbody>
