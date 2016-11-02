@@ -41,6 +41,7 @@ function Seleccionar(idvalor,idlista,idanadir,classanadir2,idtextoanadir) {
 /*function EditarAAnadir(idanadir,classanadir,idtextoanadir) {
    document.getElementById(idanadir).className = classanadir;
    document.getElementById(idtextoanadir).innerHTML = "Añadir";
+   * 
 }
 */
 
@@ -49,6 +50,7 @@ function Anadir(idlista,valor) {
     option.text = document.getElementById(valor).value;
     document.getElementById(idlista).add(option);
     document.getElementById(idvalor).value="";
+    document.getElementById(idvalor).focus(idvalor);
 }
 
 function Procesar() {
@@ -57,6 +59,7 @@ function Procesar() {
     document.getElementById("textarea").innerHTML = "Procesando " + valores.options[seleccionado].value;
 }
 
-function mostrarMensaje(idtexto) {
-    document.getElementById(idtexto).value = "Hola";
-}
+
+function mostrarMensaje (idTexto) {
+    document.getElementById(idTexto).innerHTML +=  "hola"+"&#13;&#10;"; // Agrego nueva linea antes
+    }
