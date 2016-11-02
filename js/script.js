@@ -44,9 +44,9 @@ function Seleccionar(idvalor,idlista,idanadir,classanadir2,idtextoanadir) {
 }
 */
 
-function Anadir(idlista,idvalor) {
+function Anadir(idlista,valor) {
     var option = document.createElement("option");
-    option.text = document.getElementById(idvalor).value;
+    option.text = document.getElementById(valor).value;
     document.getElementById(idlista).add(option);
     document.getElementById(idvalor).value="";
 }
