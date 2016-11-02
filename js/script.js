@@ -3,6 +3,14 @@ function stopRKey(evt) {
    var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
    if ((evt.keyCode == 13) && (node.type=="text")) {return false;}
 }
+
+/*
+ * ------------------------------------------------------------------------------
+ * Elimina todas las entradas existentes en la lista de valores referenciada 
+ * por IDLISTA
+ * ------------------------------------------------------------------------------
+ */
+ 
 function Limpiar(idlista) {
     var opcion = document.getElementById(idlista)
     while (opcion.options.length > 0) {                
@@ -11,22 +19,24 @@ function Limpiar(idlista) {
 }        
 
 function Borrar(idlista) {
-var idlista = document.getElementById(idlista);
-// Seleccionar las opciones
-var seleccionado = [];
-for (var i = 0; i < idlista.options.length; ++i)
-{
-    seleccionado[i] = idlista.options[i].selected;
-}
-// Eliminar las opciones seleccionadas
-i = idlista.options.length;
-while (i--)
-{
-    if (seleccionado[i])
-    {
-        idlista.remove(i);
-    }
-}
+	var idlista = document.getElementById(idlista);
+	
+	// Seleccionar las opciones
+	var seleccionado = [];
+	
+	for (var i = 0; i < idlista.options.length; ++i)
+	{
+		seleccionado[i] = idlista.options[i].selected;
+	}
+	// Eliminar las opciones seleccionadas
+	i = idlista.options.length;
+	while (i--)
+	{
+		if (seleccionado[i])
+		{
+			idlista.remove(i);
+		}
+	}
 }
 
 function Seleccionar(idvalor,idlista,idanadir,classanadir2,idtextoanadir) {
