@@ -40,8 +40,8 @@ function Anadir(idlista,idvalor) {
 }
 
 
-function Procesar (idTexto) {
-    document.getElementById(idTexto).innerHTML +=  "hola"+"&#13;&#10;"; // Agrego nueva linea antes
+function procesar (TextoLinea) {
+    document.getElementById("texto_chat").innerHTML += "<br>" + "Hola" ; // Agrego nueva linea antes
 }
 
 
