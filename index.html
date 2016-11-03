@@ -3,16 +3,8 @@
 	<meta charset="UTF-8">
 	<!--Inicio del encabezado-->
 	<head>
-		<!--Esto no es un script-->
-		<script language=javascript type=text/javascript>
-function stopRKey(evt) {
-   var evt = (evt) ? evt : ((event) ? event : null);
-   var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
-   if ((evt.keyCode == 13) && (node.type=="text")) {return false;}
-}
-document.onkeypress = stopRKey;
-</script>
-<!--Arriba en realidad no hay nada es fruto de tu imaginación-->
+
+
 
 	<script src="js/script.js"></script>
 <link rel="shortcut icon" href="./img/favicon.png">
@@ -55,7 +47,7 @@ document.onkeypress = stopRKey;
 <tr>
 <td colspan="2" class="d">
 <div class="valores">
-<select multiple name="o" id="valores" size="11" onChange="Seleccionar('entrada','valores','anadir','anadir2','textoanadir')">
+<select multiple name="o" id="valores" size="12" onChange="Seleccionar('entrada','valores','anadir','anadir2','textoanadir')">
 
 </select>
 </div>
@@ -80,5 +72,8 @@ document.onkeypress = stopRKey;
 <p>&nbsp;</p>
 </form>
 </center>
+<script>
+document.onkeypress = stopRKey;
+</script>
 	</body>
 </html>
