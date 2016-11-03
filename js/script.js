@@ -64,13 +64,15 @@ function Anadir(idlista,valor) {
     option.text = document.getElementById(valor).value;
     document.getElementById(idlista).add(option);
     document.getElementById(idvalor).value="";
-    document.getElementById(idvalor).focus(valor);
+
+    document.getElementById(idvalor).focus();
+
 }
 
-function Procesar() {
-    var valores = document.getElementById("valores2");
+function Procesar(idvalor2,idtexto) {
+    var valores = document.getElementById(idvalor2);
     var seleccionado = valores.options.selectedIndex;
-    document.getElementById("textarea").innerHTML = "Procesando " + valores.options[seleccionado].value;
+    document.getElementById(idtexto).innerHTML = "Procesando " + valores.options[seleccionado].value;
 }
 
 
