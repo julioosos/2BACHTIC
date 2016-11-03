@@ -2,9 +2,11 @@
 	color:black;
 	margin:480px;
 	padding:10px;
+	text-align:center;
 	}
 
 .b {
+    margin:auto;
 	background-color:#99CBDA;
 	}
 .c {
@@ -16,17 +18,18 @@
     color:#B2E7FA;
     font-weight: bold;
 	}
-.d {  
+.d {
     background-color: #fff;
-    width: 580px;
-    height: 100px;
-    text-align: center;
+    width: 100%;
     }
+.input {
+        text-align:left;
+        }
 .e {
    border-collapse: collapse;
    width: 80%;
     }
-body, head {
+   div {
     cursor:url(cursor.png),pointer;
 	font-family:Trebuchet MS;
     }
@@ -124,10 +127,18 @@ etiquetainventada1 {
 	float: left;
 	}
 .add {
-    	border: 2px solid;
+    border: 2px solid;
 	background-color: #8FDDA3;
 	border-radius: 10px;
 	border-color: #57BA55;
+	width: 9.6%;
+	text-align:center;
+	}
+.anadir2 {
+    	border: 2px solid;
+	background-color: #DADF4F;
+	border-radius: 10px;
+	border-color: #C5B827;
 	height: 25px;
 	width: 70px;
 	text-align: center;
@@ -144,15 +155,17 @@ etiquetainventada1 {
 	border-radius: 4px;
 	}
 .valores {
-	height: 200px;
+	height: 195px;
 	border: 2px solid #999;
 	width: 250px;
 	overflow: hidden;
 	border-radius: 8px;
+        margin-top: -9px;
 }
 .valores select {
-    width: 300px;
+    width: 251px;
     border: none;
+    margin-top: 4px;
   }
 
 .textarea {
@@ -160,12 +173,20 @@ etiquetainventada1 {
 	border: 2px solid #999;
 	width: 250px;
 	border-radius: 8px;
-	margin-top: 100px;
+	margin-top: 37px;
 	margin-right: 30px;
 	resize: none;
 	}
+	
 button {
     background-color: transparent;
     border: none;
     text-decoration: none;
 }
+.desplegable {
+    margin-top: 33px;
+    border: 2px solid #999;
+    border-radius: 4px;
+    width: 248px;
+    margin-right: 33px;
+    }

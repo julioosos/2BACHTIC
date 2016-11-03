@@ -3,39 +3,51 @@
 	<meta charset="UTF-8">
 	<!--Inicio del encabezado-->
 	<head>
+
+
+
 	<script src="js/script.js"></script>
-<link rel="shortcut icon" href="http://s1.postimg.org/7263p7n7v/favicon.png">
+<link rel="shortcut icon" href="./img/favicon.png">
 <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-	<div class="b">
+
+	</head>
+	<!--Fin del encabezado-->
+	
+
+	
+	<body bgcolor=#82ABB7>
+		<br> </br>
+		<div class="b">
 		<font class="a" size=12 >Formulario Web</font>
 	</div>
 	<etiquetainventada1><br></etiquetainventada1>
-	</head>
-	<!--Fin del encabezado-->
-
-	<body bgcolor=#82ABB7>
-		<br> </br>
 
 
 <center><form>
 <table class="d">
 <tbody>
 <tr>
-<td class="d">
+<td style="width:10%">
 <input type="text" class="texto" id="entrada" value="a"></input>
 </td>
-<td class="d">
-<div class="add" onclick="Anadir('valores','entrada')"><p class="borrar2">Añadir</p></div>
+<td>
+<div class="add" style="width:9.6%" onclick="Anadir('valores','entrada')"><p>Añadir</p></div>
 </td>
 <td rowspan="2" class="d">
-<textarea class="textarea" rows="10" id="texto" cols="50">
+<select class="desplegable" id="valores2">
+  <option>Prueba A</option>
+  <option>Prueba B</option>
+  <option>Prueba C</option>
+  <option>Prueba D</option>
+</select>
+<textarea readonly="readonly" class="textarea" rows="10" id="texto" cols="50">
 </textarea>
 </td>
 </tr>
 <tr>
-<td colspan="2" class="d">
+<td colspan="2">
 <div class="valores">
-<select multiple name="o" id="valores" size="11">
+<select multiple name="o" id="valores" size="12" onChange="Seleccionar('entrada','valores','anadir','anadir2','textoanadir')">
 
 </select>
 </div>
@@ -53,7 +65,7 @@
 
 </td>
 <td class="d">
-<div class="procesar" onclick="Procesar('texto')"><p class="procesar2">Procesar</p></div>
+<div class="procesar" onclick="Procesar('valores2','texto')"><p class="procesar2">Procesar</p></div>
 </td>
 </tr>
 </tbody>
@@ -61,5 +73,8 @@
 <p>&nbsp;</p>
 </form>
 </center>
+<script>
+document.onkeypress = stopRKey;
+</script>
 	</body>
 </html>
