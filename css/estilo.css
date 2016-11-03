@@ -2,7 +2,7 @@
 	color:black;
 	margin:480px;
 	padding:10px;
-	text-align:center;
+	text-align:centre;
 	}
 
 .b {
@@ -27,7 +27,7 @@
    border-collapse: collapse;
    width: 80%;
     }
-body, head {
+   div {
     cursor:url(cursor.png),pointer;
 	font-family:Trebuchet MS;
     }
@@ -82,6 +82,17 @@ etiquetainventada1 {
 	float:left;
 	}
 
+.limpiar {
+    	border: 2px solid;
+	background-color: #FA4747;
+	border-radius: 10px;
+	border-color: #BF6565;
+	height: 25px;
+	width: 250px;
+	text-align: center;
+	float: left;
+	}
+
 .procesar {
     	border: 2px solid;
 	background-color: #2E81F5;
@@ -114,21 +125,23 @@ etiquetainventada1 {
 	height: 40px;
 	margin-top: 0px;
 	}
-.limpiar {
-    	border: 2px solid;
-	background-color: #FA4747;
-	border-radius: 10px;
-	border-color: #BF6565;
-	height: 25px;
-	width: 250px;
-	text-align: center;
-	float: left;
-	}
-.add {
+.anadir {
     	border: 2px solid;
 	background-color: #8FDDA3;
 	border-radius: 10px;
 	border-color: #57BA55;
+	height: 25px;
+	width: 70px;
+	text-align: center;
+	float: right;
+	margin-right: 30px;
+	margin-top: 0px;
+	}
+.anadir2 {
+    	border: 2px solid;
+	background-color: #DADF4F;
+	border-radius: 10px;
+	border-color: #C5B827;
 	height: 25px;
 	width: 70px;
 	text-align: center;
@@ -148,13 +161,13 @@ etiquetainventada1 {
 	height: 200px;
 	border: 2px solid #999;
 	width: 250px;
-	overflow: hidden;
 	border-radius: 8px;
         margin-top: -9px;
 }
 .valores select {
-    width: 300px;
+    width: 251px;
     border: none;
+    margin-top: 4px;
   }
 
 .textarea {
