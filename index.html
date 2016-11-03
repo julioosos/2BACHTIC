@@ -4,7 +4,47 @@
 	<!--Inicio del encabezado-->
 	<head>
 		<!--Esto no es un script-->
+		<script type="text/javascript"> 
+var ahora = new Date() 
+dias = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves",
+ "Viernes", "Sabado"); 
+document.write(dias[ahora.getDay()]) 
+</script>
+
+<script type="text/javascript"> 
+
+function getHora(){
+	var date = new Date();
+	  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var ampm = hours = 24 ;
+  hours = hours % 24;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0'+minutes : minutes;
+  var strTime = hours + ':' + minutes + ':' + ampm;
+  return date.getMonth()+1 + "." + date.getDate() + "." + date.getFullYear() + " " + strTime;
+	var rsdo="";
+	return rsdo;
+	
+  
+}
+ahora.setFullYear("2016"); 
+document.write(ahora.getDate()) 
+document.write(".") 
+document.write(ahora.getMonth() + 1) 
+document.write(".") 
+document.write(ahora.getFullYear())
+document.write("--") 
+document.write(ahora.getHours()) 
+document.write(":") 
+document.write(ahora.getMinutes())
+document.write(":") 
+document.write(ahora.getSeconds())
+</script>
+		
 		<script language=javascript type=text/javascript>
+			
+			
 function stopRKey(evt) {
    var evt = (evt) ? evt : ((event) ? event : null);
    var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
@@ -12,6 +52,7 @@ function stopRKey(evt) {
 }
 document.onkeypress = stopRKey;
 </script>
+
 <!--Arriba en realidad no hay nada es fruto de tu imaginación-->
 
 	<script src="js/script.js"></script>
