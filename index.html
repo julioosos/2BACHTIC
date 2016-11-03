@@ -27,11 +27,6 @@
 <table class="d">
 <tbody>
 <tr>
-<td style="width:10%">
-<input type="text" class="texto" id="entrada" value="a"></input>
-</td>
-<td>
-<div class="add" style="width:9.6%" onclick="Anadir('valores','entrada')"><p>Añadir</p></div>
 <td class="d">
 <input type="text" class="texto" id="entrada" value="a" onClick="EditarAAnadir('anadir','anadir','textoanadir')"></input>
 </td>
@@ -39,6 +34,7 @@
 
 
 <a href="#" class="tooltip"><input  type="button"  value="Añadir" id="anadir"  class="anadir" onclick="Anadir('valores','entrada')"><p id="textoanadir" class="borrar2"></p></input></a>
+
 
 </td>
 <td rowspan="2" class="d">
@@ -53,7 +49,7 @@
 </td>
 </tr>
 <tr>
-<td colspan="2">
+<td colspan="2" class="d">
 <div class="valores">
 <select multiple name="o" id="valores" size="12" onChange="Seleccionar('entrada','valores','anadir','anadir2','textoanadir')">
 
@@ -72,7 +68,6 @@
 
 </td>
 <td class="d">
-<div class="procesar" onclick="Procesar('valores2','texto')"><p class="procesar2">Procesar</p></div>
 
 <div class="procesar" onclick="Procesar()"><a href="#" class="tooltip">Procesar</a><p class="procesar2"></p></div>
 

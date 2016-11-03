@@ -50,8 +50,6 @@ function Seleccionar(valor,idlista,idanadir,classanadir2,idtextoanadir) {
 
 }
 
-
-
 /*function EditarAAnadir(idanadir,classanadir,idtextoanadir) {
    document.getElementById(idanadir).className = classanadir;
    document.getElementById(idtextoanadir).innerHTML = "Añadir";
@@ -74,7 +72,6 @@ function Procesar(idvalor2,idtexto) {
     var seleccionado = valores.options.selectedIndex;
     document.getElementById(idtexto).innerHTML = "Procesando " + valores.options[seleccionado].value;
 }
-
 
 function mostrarMensaje (idTexto,valor) {
     document.getElementById(idTexto).innerHTML +=  valor+"&#13;&#10;"; // Agrego nueva linea antes

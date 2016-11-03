@@ -2,15 +2,10 @@
 	color:black;
 	margin:480px;
 	padding:10px;
-<<<<<<< HEAD
-	text-align:center;
-=======
 	text-align:centre;
->>>>>>> c0a0197e47e63e2c62ed819a3ef0553482a7fce5
 	}
 
 .b {
-    margin:auto;
 	background-color:#99CBDA;
 	}
 .c {
@@ -22,13 +17,12 @@
     color:#B2E7FA;
     font-weight: bold;
 	}
-.d {
+.d {  
     background-color: #fff;
-    width: 100%;
+    width: 580px;
+    height: 100px;
+    text-align: center;
     }
-.input {
-        text-align:left;
-        }
 .e {
    border-collapse: collapse;
    width: 80%;
@@ -143,25 +137,10 @@ etiquetainventada1 {
 	margin-right: 30px;
 	margin-top: 0px;
 	}
-<<<<<<< HEAD
-.add {
-    border: 2px solid;
-	background-color: #8FDDA3;
-	border-radius: 10px;
-	border-color: #57BA55;
-	width: 9.6%;
-	text-align:center;
-	}
 .anadir2 {
     	border: 2px solid;
 	background-color: #DADF4F;
 	border-radius: 10px;
-=======
-.anadir2 {
-    	border: 2px solid;
-	background-color: #DADF4F;
-	border-radius: 10px;
->>>>>>> c0a0197e47e63e2c62ed819a3ef0553482a7fce5
 	border-color: #C5B827;
 	height: 25px;
 	width: 70px;
@@ -200,7 +179,6 @@ etiquetainventada1 {
 	margin-right: 30px;
 	resize: none;
 	}
-	
 button {
     background-color: transparent;
     border: none;
@@ -213,8 +191,6 @@ button {
     width: 248px;
     margin-right: 33px;
     }
-<<<<<<< HEAD
-=======
     
     a {
 font:15px Geneva, Arial, Helvetica, sans-serif;
@@ -243,4 +219,3 @@ border:1px solid #cccccc;
 background:#ffffff;
 color:#666666;
 }
->>>>>>> c0a0197e47e63e2c62ed819a3ef0553482a7fce5
