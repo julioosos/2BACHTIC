@@ -27,11 +27,23 @@
 <table class="d">
 <tbody>
 <tr>
+<<<<<<< HEAD
 <td style="width:10%">
 <input type="text" class="texto" id="entrada" value="a"></input>
 </td>
 <td>
 <div class="add" style="width:9.6%" onclick="Anadir('valores','entrada')"><p>Añadir</p></div>
+=======
+<td class="d">
+<input type="text" class="texto" id="entrada" value="a" onClick="EditarAAnadir('anadir','anadir','textoanadir')"></input>
+</td>
+<td class="d">
+
+
+<a href="#" class="tooltip"><input  type="button"  value="Añadir" id="anadir"  class="anadir" onclick="Anadir('valores','entrada')"><p id="textoanadir" class="borrar2"></p></input><span>Carlos calvo</span></a>
+
+
+>>>>>>> c0a0197e47e63e2c62ed819a3ef0553482a7fce5
 </td>
 <td rowspan="2" class="d">
 <select class="desplegable" id="valores2">
@@ -55,17 +67,22 @@
 </tr>
 <tr>
 <td colspan="2" class="d">
-<div class="borrar" onclick="Borrar('valores')"><p class="borrar2">Borrar</p></div>
+<div class="borrar"  onclick="Borrar('valores')"><a href="#" class="tooltip">Borrar<span>Carlos calvo</span></a><p class="borrar2"></p></div>
 <br class="espacio">
 
 
 
-<div class="limpiar" onclick="Limpiar('valores')"><p class="borrar2">Limpiar</p></div>
-
+<div class="limpiar"  onclick="Limpiar('valores')"><a href="#" class="tooltip">Limpiar<span>Carlos calvo</span></a><p class="borrar2"></p></div>
 
 </td>
 <td class="d">
+<<<<<<< HEAD
 <div class="procesar" onclick="Procesar('valores2','texto')"><p class="procesar2">Procesar</p></div>
+=======
+
+<div class="procesar" onclick="Procesar()"><a href="#" class="tooltip">Procesar<span>Carlos calvo</span></a><p class="procesar2"></p></div>
+
+>>>>>>> c0a0197e47e63e2c62ed819a3ef0553482a7fce5
 </td>
 </tr>
 </tbody>

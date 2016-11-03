@@ -2,7 +2,11 @@
 	color:black;
 	margin:480px;
 	padding:10px;
+<<<<<<< HEAD
 	text-align:center;
+=======
+	text-align:centre;
+>>>>>>> c0a0197e47e63e2c62ed819a3ef0553482a7fce5
 	}
 
 .b {
@@ -84,6 +88,17 @@ etiquetainventada1 {
 	float:left;
 	}
 
+.limpiar {
+    	border: 2px solid;
+	background-color: #FA4747;
+	border-radius: 10px;
+	border-color: #BF6565;
+	height: 25px;
+	width: 250px;
+	text-align: center;
+	float: left;
+	}
+
 .procesar {
     	border: 2px solid;
 	background-color: #2E81F5;
@@ -116,16 +131,19 @@ etiquetainventada1 {
 	height: 40px;
 	margin-top: 0px;
 	}
-.limpiar {
+.anadir {
     	border: 2px solid;
-	background-color: #FA4747;
+	background-color: #8FDDA3;
 	border-radius: 10px;
-	border-color: #BF6565;
+	border-color: #57BA55;
 	height: 25px;
-	width: 250px;
+	width: 70px;
 	text-align: center;
-	float: left;
+	float: right;
+	margin-right: 30px;
+	margin-top: 0px;
 	}
+<<<<<<< HEAD
 .add {
     border: 2px solid;
 	background-color: #8FDDA3;
@@ -138,6 +156,12 @@ etiquetainventada1 {
     	border: 2px solid;
 	background-color: #DADF4F;
 	border-radius: 10px;
+=======
+.anadir2 {
+    	border: 2px solid;
+	background-color: #DADF4F;
+	border-radius: 10px;
+>>>>>>> c0a0197e47e63e2c62ed819a3ef0553482a7fce5
 	border-color: #C5B827;
 	height: 25px;
 	width: 70px;
@@ -158,7 +182,6 @@ etiquetainventada1 {
 	height: 195px;
 	border: 2px solid #999;
 	width: 250px;
-	overflow: hidden;
 	border-radius: 8px;
         margin-top: -9px;
 }
@@ -190,3 +213,34 @@ button {
     width: 248px;
     margin-right: 33px;
     }
+<<<<<<< HEAD
+=======
+    
+    a {
+font:15px Geneva, Arial, Helvetica, sans-serif;
+color:#CCCCCC;
+text-decoration:none;
+}
+
+a:hover {
+border-bottom: 1px dashed #CCCCCC;
+}
+
+a.tooltip:hover {
+text-decoration:none;
+}
+
+a.tooltip span {
+display:none;
+margin:0 0 0 10px;
+padding:5px 5px;
+}
+
+a.tooltip:hover span {
+display:inline;
+position:absolute;
+border:1px solid #cccccc;
+background:#ffffff;
+color:#666666;
+}
+>>>>>>> c0a0197e47e63e2c62ed819a3ef0553482a7fce5
