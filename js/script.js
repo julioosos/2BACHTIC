@@ -73,3 +73,6 @@ function Procesar() {
 function mostrarMensaje (idTexto) {
     document.getElementById(idTexto).innerHTML +=  "hola"+"&#13;&#10;"; // Agrego nueva linea antes
     }
+    
+
+ 

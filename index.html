@@ -3,13 +3,13 @@
 	<meta charset="UTF-8">
 	<!--Inicio del encabezado-->
 	<head>
-<<<<<<< HEAD
+
 		<!--Esto no es un script-->
 		<script type="text/javascript"> 
 var ahora = new Date() 
 dias = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves",
  "Viernes", "Sabado"); 
-document.write(dias[ahora.getDay()]) 
+//document.write(dias[ahora.getDay()]) 
 </script>
 
 <script type="text/javascript"> 
@@ -18,29 +18,18 @@ function getHora(){
 	var date = new Date();
 	  var hours = date.getHours();
   var minutes = date.getMinutes();
-  var ampm = hours = 24 ;
-  hours = hours % 24;
-  hours = hours ? hours : 12; // the hour '0' should be '12'
+  //var ampm = hours = 24 ;
+  var ampm=24;
+  //hours = hours % 24;
+  //hours = hours ? hours : 24; // the hour '0' should be '12'
   minutes = minutes < 10 ? '0'+minutes : minutes;
   var strTime = hours + ':' + minutes + ':' + ampm;
-  return date.getMonth()+1 + "." + date.getDate() + "." + date.getFullYear() + " " + strTime;
-	var rsdo="";
-	return rsdo;
+  return date.getFullYear() + "." + date.getMonth() + "." + date.getDate() + " " + strTime;
 	
   
 }
-ahora.setFullYear("2016"); 
-document.write(ahora.getDate()) 
-document.write(".") 
-document.write(ahora.getMonth() + 1) 
-document.write(".") 
-document.write(ahora.getFullYear())
-document.write("--") 
-document.write(ahora.getHours()) 
-document.write(":") 
-document.write(ahora.getMinutes())
-document.write(":") 
-document.write(ahora.getSeconds())
+
+alert(getHora());
 </script>
 		
 		<script language=javascript type=text/javascript>
@@ -55,10 +44,7 @@ document.onkeypress = stopRKey;
 </script>
 
 <!--Arriba en realidad no hay nada es fruto de tu imaginación-->
-=======
 
-
->>>>>>> 1a8f2c6ea1de08b29aab41a5bccd041a48c44554
 
 	<script src="js/script.js"></script>
 	<script type="text/javascript" src="/js/reorderSelect.js"></script>
