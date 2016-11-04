@@ -1,145 +1,130 @@
 <html lang="es-ES">
-<title>Formulario web</title>
-<meta charset="UTF-8">
-<!--Inicio del encabezado-->
+	<title>Formulario web</title>
+	<meta charset="UTF-8">
+	<!--Inicio del encabezado-->
+	<head>
 
-<head>
+		<!--Esto no es un script-->
+		<script type="text/javascript"> 
+var ahora = new Date() 
+dias = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves",
+ "Viernes", "Sabado"); 
+//document.write(dias[ahora.getDay()]) 
+</script>
 
-    <!--Esto no es un script-->
-    <script type="text/javascript">
-        var ahora = new Date()
-        dias = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves",
-            "Viernes", "Sabado");
-        //document.write(dias[ahora.getDay()])
-    </script>
+<script type="text/javascript"> 
 
-    <script type="text/javascript">
-        function getHora() {
-            var date = new Date();
-            var hours = date.getHours();
-            var minutes = date.getMinutes();
-            //var ampm = hours = 24 ;
-            var ampm = 24;
-            //hours = hours % 24;
-            //hours = hours ? hours : 24; // the hour '0' should be '12'
-            minutes = minutes < 10 ? '0' + minutes : minutes;
-            var strTime = hours + ':' + minutes + ':' + ampm;
-            return date.getFullYear() + "." + date.getMonth() + "." + date.getDate() + " " + strTime;
+function getHora(){
+	var date = new Date();
+	  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  //var ampm = hours = 24 ;
+  var ampm=24;
+  //hours = hours % 24;
+  //hours = hours ? hours : 24; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0'+minutes : minutes;
+  var strTime = hours + ':' + minutes + ':' + ampm;
+  return date.getFullYear() + "." + date.getMonth() + "." + date.getDate() + " " + strTime;
+	
+  
+}
 
+alert(getHora());
+</script>
+		
+		<script language=javascript type=text/javascript>
+			
+			
+function stopRKey(evt) {
+   var evt = (evt) ? evt : ((event) ? event : null);
+   var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+   if ((evt.keyCode == 13) && (node.type=="text")) {return false;}
+}
+document.onkeypress = stopRKey;
+</script>
 
-        }
-
-        alert(getHora());
-    </script>
-
-    <script language=javascript type=text/javascript>
-        function stopRKey(evt) {
-            var evt = (evt) ? evt : ((event) ? event : null);
-            var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
-            if ((evt.keyCode == 13) && (node.type == "text")) {
-                return false;
-            }
-        }
-        document.onkeypress = stopRKey;
-    </script>
-
-    <!--Arriba en realidad no hay nada es fruto de tu imaginación-->
-
-
-    <script src="js/script.js"></script>
-    <script type="text/javascript" src="/js/reorderSelect.js"></script>
-    <link rel="shortcut icon" href="./img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-
-</head>
-<!--Fin del encabezado-->
+<!--Arriba en realidad no hay nada es fruto de tu imaginación-->
 
 
+	<script src="js/script.js"></script>
+	<script type="text/javascript" src="/js/reorderSelect.js"></script>
+<link rel="shortcut icon" href="./img/favicon.png">
+<link rel="stylesheet" type="text/css" href="css/estilo.css" />
 
-<body bgcolor=#82ABB7>
-    <br> </br>
-    <div class="b">
-        <font class="a" size=12>Formulario Web</font>
-    </div>
-    <etiquetainventada1>
-        <br>
-    </etiquetainventada1>
+	</head>
+	<!--Fin del encabezado-->
+	
 
-
-    <div>
-        <form>
-            <table class="d">
-                <tbody>
-                    <tr>
-                        <td class="d">
-                            <input type="text" class="texto" id="entrada" value="a" onClick="EditarAAnadir('anadir','anadir','textoanadir')"></input>
-                        </td>
-                        <td class="d">
-
-                            <a href="#" class="tooltip">
-                                <div class="anadir" id="anadir" onclick="Anadir('valores','entrada')">
-                                    <p id="textoanadir" class="borrar2"><a href="#" class="tooltip">Añadir<span>julio es la hostia por acabar esto</span></a>
-                                    </p>
-                                </div>
-                            </a>
-
-                        </td>
-                        <td rowspan="2" class="d">
-                            <select class="desplegable" id="valores2">
-                                <option>Prueba A</option>
-                                <option>Prueba B</option>
-                                <option>Prueba C</option>
-                                <option>Prueba D</option>
-                            </select>
-                            <textarea readonly="readonly" class="textarea" rows="10" id="texto" cols="50">
-                            </textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="d">
-                            <div class="valores">
-                                <select multiple name="o" id="valores" size="12" onChange="Seleccionar('entrada','valores','anadir','anadir2','textoanadir')">
-
-                                </select>
-                            </div>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="d">
+	
+	<body bgcolor=#82ABB7>
+		<br> </br>
+		<div class="b">
+		<font class="a" size=12 >Formulario Web</font>
+	</div>
+	<etiquetainventada1><br></etiquetainventada1>
 
 
-                            <div class="borrar" onclick="Borrar('valores')"><a href="#" class="tooltip">Borrar<span>Elimina las entradas seleccionadas</span></a>
-                                <p class="borrar2"></p>
-                            </div>
+<div><form>
+<table class="d">
+<tbody>
+<tr>
+<td class="d">
+	<input type="text" class="texto" id="entrada" value="a" onClick="EditarAAnadir('anadir','anadir','textoanadir')"></input>
+</td>
+<td class="d">
 
-                            <br class="espacio">
+	<a href="#" class="tooltip"><div class="anadir" id="anadir" onclick="Anadir('valores','entrada')"><p id="textoanadir" class="borrar2"><a href="#" class="tooltip">Añadir<span>julio es la hostia por acabar esto</span></a></p></div></a>
+
+</td>
+<td rowspan="2" class="d">
+<select class="desplegable" id="valores2">
+  <option>Prueba A</option>
+  <option>Prueba B</option>
+  <option>Prueba C</option>
+  <option>Prueba D</option>
+</select>
+<textarea readonly="readonly" class="textarea" rows="10" id="texto" cols="50">
+</textarea>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="d">
+<div class="valores">
+<select multiple name="o" id="valores" size="13" onChange="Seleccionar('entrada','valores','anadir','anadir2','textoanadir')">
+
+</select>
+</div>
+
+</td>
+</tr>
+<tr>
+<td colspan="2" class="d">
+
+
+<div class="borrar"  onclick="Borrar('valores')"><a href="#" class="tooltip">Borrar<span>Elimina las entradas seleccionadas</span></a><p class="borrar2"></p></div>
+
+<br class="espacio">
 
 
 
-                            <div class="limpiar" onclick="Limpiar('valores')"><a href="#" class="tooltip">Limpiar<span>julio es la hostia por acabar esto</span></a>
-                                <p class="borrar2"></p>
-                            </div>
+<div class="limpiar"  onclick="Limpiar('valores')"><a href="#" class="tooltip">Limpiar<span>julio es la hostia por acabar esto</span></a><p class="borrar2"></p></div>
 
 
-                        </td>
-                        <td class="d">
+</td>
+<td class="d">
 
 
-                            <div class="procesar" onclick="Procesar()"><a href="#" class="tooltip">Procesar<span>julio es la hostia por acabar esto</span></a>
-                                <p class="procesar2"></p>
-                            </div>
+<div class="procesar" onclick="Procesar()"><a href="#" class="tooltip">Procesar<span>julio es la hostia por acabar esto</span></a><p class="procesar2"></p></div>
 
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>&nbsp;</p>
-        </form>
-    </div>
-    <script>
-        document.onkeypress = stopRKey;
-    </script>
-</body>
-
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</form>
+</div>
+<script>
+document.onkeypress = stopRKey;
+</script>
+	</body>
 </html>
