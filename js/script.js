@@ -16,6 +16,7 @@ function Limpiar(idlista) {
     while (opcion.options.length > 0) {                
         opcion.remove(0);
     }
+
 }        
 
 function Borrar(idlista) {
@@ -39,14 +40,15 @@ function Borrar(idlista) {
 	}
 }
 
-function Seleccionar(idvalor,idlista,idanadir,classanadir2,idtextoanadir) {
+function Seleccionar(valor,idlista,idanadir,classanadir2,idtextoanadir) {
     var valores = document.getElementById(idlista);
     var seleccionado = valores.options.selectedIndex;
-    document.getElementById(idvalor).value=valores.options[seleccionado].value;
+    document.getElementById(valor).value=valores.options[seleccionado].value;
     document.getElementById(idanadir).className = classanadir2;
     document.getElementById(idtextoanadir).innerHTML = "Editar";
-}
 
+
+}
 
 /*function EditarAAnadir(idanadir,classanadir,idtextoanadir) {
    document.getElementById(idanadir).className = classanadir;
@@ -60,18 +62,19 @@ function Anadir(idlista,valor) {
     option.text = document.getElementById(valor).value;
     document.getElementById(idlista).add(option);
     document.getElementById(idvalor).value="";
-    document.getElementById(idvalor).focus(idvalor);
+
+    document.getElementById(idvalor).focus();
+
 }
 
-function Procesar() {
-    var valores = document.getElementById("valores2");
+function Procesar(idvalor2,idtexto) {
+    var valores = document.getElementById(idvalor2);
     var seleccionado = valores.options.selectedIndex;
-    document.getElementById("textarea").innerHTML = "Procesando " + valores.options[seleccionado].value;
+    document.getElementById(idtexto).innerHTML = "Procesando " + valores.options[seleccionado].value;
 }
 
-
-function mostrarMensaje (idTexto) {
-    document.getElementById(idTexto).innerHTML +=  "hola"+"&#13;&#10;"; // Agrego nueva linea antes
+function mostrarMensaje (idTexto,valor) {
+    document.getElementById(idTexto).innerHTML +=  valor+"&#13;&#10;"; // Agrego nueva linea antes
     }
     
 

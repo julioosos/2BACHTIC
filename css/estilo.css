@@ -2,7 +2,7 @@
 	color:black;
 	margin:480px;
 	padding:10px;
-	text-align:center;
+	text-align:centre;
 	}
 
 .b {
@@ -82,6 +82,17 @@ etiquetainventada1 {
 	float:left;
 	}
 
+.limpiar {
+    	border: 2px solid;
+	background-color: #FA4747;
+	border-radius: 10px;
+	border-color: #BF6565;
+	height: 25px;
+	width: 250px;
+	text-align: center;
+	float: left;
+	}
+
 .procesar {
     	border: 2px solid;
 	background-color: #2E81F5;
@@ -113,16 +124,6 @@ etiquetainventada1 {
 	font-size: 20px;
 	height: 40px;
 	margin-top: 0px;
-	}
-.limpiar {
-    	border: 2px solid;
-	background-color: #FA4747;
-	border-radius: 10px;
-	border-color: #BF6565;
-	height: 25px;
-	width: 250px;
-	text-align: center;
-	float: left;
 	}
 .anadir {
     	border: 2px solid;
@@ -190,3 +191,31 @@ button {
     width: 248px;
     margin-right: 33px;
     }
+    
+    a {
+font:15px Geneva, Arial, Helvetica, sans-serif;
+color:#CCCCCC;
+text-decoration:none;
+}
+
+a:hover {
+border-bottom: 1px dashed #CCCCCC;
+}
+
+a.tooltip:hover {
+text-decoration:none;
+}
+
+a.tooltip span {
+display:none;
+margin:0 0 0 10px;
+padding:5px 5px;
+}
+
+a.tooltip:hover span {
+display:inline;
+position:absolute;
+border:1px solid #cccccc;
+background:#ffffff;
+color:#666666;
+}
