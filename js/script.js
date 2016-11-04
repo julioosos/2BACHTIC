@@ -74,7 +74,7 @@ function Procesar(idvalor2,idtexto) {
 }
 
 function mostrarMensaje (idTexto,valor) {
-    document.getElementById(idTexto).innerHTML +=  valor+"&#13;&#10;"; // Agrego nueva linea antes
+    document.getElementById(idTexto).innerHTML +=  valor +"&#13;&#10;"; // Agrego nueva linea antes
     }
     
 
