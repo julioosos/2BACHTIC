@@ -64,7 +64,7 @@ document.onkeypress = stopRKey;
 	<etiquetainventada1><br></etiquetainventada1>
 
 
-<center><form>
+<div><form>
 <table class="d">
 <tbody>
 <tr>
@@ -72,7 +72,9 @@ document.onkeypress = stopRKey;
 	<input type="text" class="texto" id="entrada" value="a" onClick="EditarAAnadir('anadir','anadir','textoanadir')"></input>
 </td>
 <td class="d">
-	<a href="#" class="tooltip"><div class="anadir" id="anadir" onclick="Anadir('valores','entrada')"><p id="textoanadir" class="borrar2">Añadir</p></div></a>
+
+	<a href="#" class="tooltip"><div class="anadir" id="anadir" onclick="Anadir('valores','entrada')"><p id="textoanadir" class="borrar2"><a href="#" class="tooltip">Añadir<span>julio es la hostia por acabar esto</span></a></p></div></a>
+
 </td>
 <td rowspan="2" class="d">
 <select class="desplegable" id="valores2">
@@ -97,17 +99,22 @@ document.onkeypress = stopRKey;
 </tr>
 <tr>
 <td colspan="2" class="d">
+
+
 <div class="borrar"  onclick="Borrar('valores')"><a href="#" class="tooltip">Borrar<span>Elimina las entradas seleccionadas</span></a><p class="borrar2"></p></div>
+
 <br class="espacio">
 
 
 
-<div class="limpiar"  onclick="Limpiar('valores')"><a href="#" class="tooltip">Limpiar</a><p class="borrar2"></p></div>
+<div class="limpiar"  onclick="Limpiar('valores')"><a href="#" class="tooltip">Limpiar<span>julio es la hostia por acabar esto</span></a><p class="borrar2"></p></div>
+
 
 </td>
 <td class="d">
 
-<div class="procesar" onclick="Procesar()"><a href="#" class="tooltip">Procesar</a><p class="procesar2"></p></div>
+
+<div class="procesar" onclick="Procesar()"><a href="#" class="tooltip">Procesar<span>julio es la hostia por acabar esto</span></a><p class="procesar2"></p></div>
 
 </td>
 </tr>
@@ -115,7 +122,7 @@ document.onkeypress = stopRKey;
 </table>
 <p>&nbsp;</p>
 </form>
-</center>
+</div>
 <script>
 document.onkeypress = stopRKey;
 </script>
