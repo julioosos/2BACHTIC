@@ -72,15 +72,8 @@ function Procesar(idvalor2, idtexto) {
     document.getElementById(idtexto).innerHTML = "Procesando " + valores.options[seleccionado].value;
 }
 
-<<<<<<< HEAD
+
 function mostrarMensaje(idTexto, valor) {
     document.getElementById(idTexto).innerHTML += valor + "&#13;&#10;"; // Agrego nueva linea antes
 }
-=======
-function mostrarMensaje (idTexto,valor) {
-    document.getElementById(idTexto).innerHTML +=  valor +"&#13;&#10;"; // Agrego nueva linea antes
-    }
-    
 
- 
->>>>>>> e9b14ceb6fa88c3b902a83aa7d742cb2844c8f95
