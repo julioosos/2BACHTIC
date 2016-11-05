@@ -60,9 +60,8 @@ function Anadir(idlista, valor) {
     var option = document.createElement("option");
     option.text = document.getElementById(valor).value;
     document.getElementById(idlista).add(option);
-    document.getElementById(idvalor).value = "";
-
-    document.getElementById(idvalor).focus();
+    document.getElementById(valor).value = "";
+    document.getElementById(valor).focus();
 
 }
 
