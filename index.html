@@ -76,7 +76,7 @@
                 <tbody>
                     <tr>
                         <td class="d">
-                            <input type="text" class="texto" id="entrada" value="a" onClick="EditarAAnadir('anadir','anadir','textoanadir')"></input>
+                            <input type="text" class="texto" id="entrada" value="" onClick="EditarAAnadir('anadir','anadir','textoanadir')"></input>
                         </td>
                         <td class="d">
 
@@ -117,11 +117,18 @@
                                 <p class="borrar2"></p>
                             </div>
 
+                            <div class="limpiar" onclick="Limpiar('valores')"><a href="#" class="tooltip">Limpiar<span>Limpia todas las entradas</span></a>
+                                <p class="borrar2"></p>
+                            </div>
+                            
                             <br class="espacio">
 
+                            <div class="arriba" alt="Move Up" onclick="moveUp('valores')" ><a href="#" class="tooltip">arriba<span>Subir entradas seleccionadas</span></a>
+                                <p class="borrar2"></p>
+                                
+                            </div>
 
-
-                            <div class="limpiar" onclick="Limpiar('valores')"><a href="#" class="tooltip">Limpiar<span>julio es la hostia por acabar esto</span></a>
+                            <div class="abajo" alt="Move Down" onclick="moveDown('valores')" ><a href="#" class="tooltip">abajo<span>Bajar entradas seleccionadas</span></a>
                                 <p class="borrar2"></p>
                             </div>
 

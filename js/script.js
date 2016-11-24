@@ -76,3 +76,28 @@ function mostrarMensaje(idTexto, valor) {
     document.getElementById(idTexto).innerHTML += valor + "&#13;&#10;"; // Agrego nueva linea antes
 }
 
+function moveUp(idlista) {
+	var idlista = document.getElementById(idlista);
+	var seleccionado = idlista.getElementsByTagName('option');
+	for (var i = 1; i < seleccionado.length; i++) {
+		var opcion = seleccionado[i];
+		if (opcion.selected) {
+			idlista.removeChild(opcion);
+			idlista.insertBefore(opcion, seleccionado[i - 1]);
+			}
+       }
+}
+    
+function moveDown(idlista) {
+	var idlista = document.getElementById(idlista);
+	var seleccionado = idlista.getElementsByTagName('option');
+	for (var i = seleccionado.length - 2; i >= 0; i--) {
+		var opcion = seleccionado[i];
+		if (opcion.selected) {
+		   var siguienteOpcion = seleccionado[i + 1];
+		   opcion = idlista.removeChild(opcion);
+		   siguienteOpcion = idlista.replaceChild(opcion, siguienteOpcion);
+		   idlista.insertBefore(siguienteOpcion, opcion);
+			}
+       }
+}
