@@ -232,7 +232,7 @@ color:#666666;
 	margin-bottom: 1px;
 	}
 	
-	.limpiar {
+.limpiar {
     	border: 2px solid;
 	background-color: #FA4747;
 	border-radius: 10px;
@@ -242,3 +242,29 @@ color:#666666;
 	text-align: center;
 	float: left;
 	}
+
+.flechasabajo {
+	position: absolute;
+	margin: 190px 275px 1px;
+	border: 2px;
+	height: 27px;
+	width: 30px;
+	
+
+}
+
+.flechasarriba {
+	position: absolute;
+	margin: 160px 275px 1px;
+	border: 2px;
+	height: 27px;
+	width: 30px;
+
+}
+
+img {
+	width:60px;
+	height:62px;
+	position: absolute;
+	margin: 159px 264px 1px;
+}
