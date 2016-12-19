@@ -59,9 +59,10 @@
 
 <body bgcolor=#82ABB7>
     <br> </br>
-   <center> <div class="b">
-        <font class="a" size=12>Formulario Web</font>
-    </div>
+    <center>
+        <div class="b">
+            <font class="a" size=12>Formulario Web</font>
+        </div>
     </center>
  
         <br>
@@ -74,7 +75,7 @@
                 <tbody>
                     <tr>
                         <td class="d">
-                            <input type="text" class="texto" id="entrada" value="a" onClick="EditarAAnadir('anadir','anadir','textoanadir')"></input>
+                            <input type="text" class="texto" id="entrada" value="" onClick="EditarAAnadir('anadir','anadir','textoanadir')"></input>
                         </td>
                         <td class="d">
 
@@ -101,7 +102,7 @@
                         <td colspan="2" class="d">
                             <div class="valores">
                                 <select multiple name="o" id="valores" size="12" onChange="Seleccionar('entrada','valores','anadir','anadir2','textoanadir')">
-
+								
                                 </select>
                             </div>
 
@@ -110,19 +111,13 @@
                     <tr>
                         <td colspan="2" class="d">
 
-
                             <div class="borrar" onclick="Borrar('valores')"><a href="#" class="tooltip">Borrar<span>Elimina las entradas seleccionadas</span></a>
                                 <p class="borrar2"></p>
                             </div>
 
-                            <br class="espacio">
-
-
-
-                            <div class="limpiar" onclick="Limpiar('valores')"><a href="#" class="tooltip">Limpiar<span>julio es la hostia por acabar esto</span></a>
+                            <div class="limpiar" onclick="Limpiar('valores')"><a href="#" class="tooltip">Limpiar<span>Limpia todas las entradas</span></a>
                                 <p class="borrar2"></p>
                             </div>
-
 
                         </td>
                         <td class="d">
@@ -133,6 +128,10 @@
                             </div>
 
                         </td>
+                        <div <div<class="img"></class><img src="http://2.bp.blogspot.com/-Ul0lzZsQUv8/T0he6AT2uOI/AAAAAAAAE-c/sKwYVZHwIg0/s1600/boton+de+navegacion.jpg" />
+                        <div class="flechasarriba" alt="Move Up" onclick="moveUp('valores')"></div>
+                        <div class="flechasabajo" alt="Move Down" onclick="moveDown('valores')"></div>
+                        </div>
                     </tr>
                 </tbody>
             </table>

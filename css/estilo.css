@@ -79,17 +79,6 @@ etiquetainventada1 {
 	float:left;
 	}
 
-.limpiar {
-    	border: 2px solid;
-	background-color: #FA4747;
-	border-radius: 10px;
-	border-color: #BF6565;
-	height: 25px;
-	width: 250px;
-	text-align: center;
-	float: left;
-	}
-
 .procesar {
     	border: 2px solid;
 	background-color: #2E81F5;
@@ -105,17 +94,7 @@ etiquetainventada1 {
 	color: white;
 	font-size: 20px;
 	}
-.borrar {
-    	border: 2px solid;
-	background-color: #DD9494;
-	border-radius: 10px;
-	border-color: #BF6565;
-	height: 25px;
-	width: 250px;
-	text-align: center;
-	float: left;
-	margin-bottom: 1px;
-	}
+
 .borrar2 {
 	color: white;
 	font-size: 20px;
@@ -215,4 +194,77 @@ position:absolute;
 border:1px solid #cccccc;
 background:#ffffff;
 color:#666666;
+}
+
+.abajo {
+    	border: 2px solid;
+	background-color: red;
+	border-radius: 10px;
+	border-color: #BF6565;
+	height: 25px;
+	width: 125px;
+	text-align: center;
+	float: left;
+	margin-bottom: 1px;
+	}
+	
+.arriba {
+    	border: 2px solid;
+	background-color: blue;
+	border-radius: 10px;
+	border-color: #BF6565;
+	height: 25px;
+	width: 125px;
+	text-align: center;
+	float: left;
+	margin-bottom: 1px;
+	}
+
+.borrar {
+    	border: 2px solid;
+	background-color: #DD9494;
+	border-radius: 10px;
+	border-color: #BF6565;
+	height: 25px;
+	width: 125px;
+	text-align: center;
+	float: left;
+	margin-bottom: 1px;
+	}
+	
+.limpiar {
+    	border: 2px solid;
+	background-color: #FA4747;
+	border-radius: 10px;
+	border-color: #BF6565;
+	height: 25px;
+	width: 125px;
+	text-align: center;
+	float: left;
+	}
+
+.flechasabajo {
+	position: absolute;
+	margin: 190px 275px 1px;
+	border: 2px;
+	height: 27px;
+	width: 30px;
+	
+
+}
+
+.flechasarriba {
+	position: absolute;
+	margin: 160px 275px 1px;
+	border: 2px;
+	height: 27px;
+	width: 30px;
+
+}
+
+img {
+	width:60px;
+	height:62px;
+	position: absolute;
+	margin: 159px 264px 1px;
 }
