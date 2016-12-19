@@ -5,7 +5,19 @@ function stopRKey(evt) {
         return false;
     }
 }
+        function getHora() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+           
+            var ampm = 24;
 
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            var strTime = hours + ':' + minutes + ':' + ampm;
+            return date.getFullYear() + "." + date.getMonth() + "." + date.getDate() + " " + strTime;
+
+
+        }
 /*
  * ------------------------------------------------------------------------------
  * Elimina todas las entradas existentes en la lista de valores referenciada
