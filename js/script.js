@@ -134,4 +134,15 @@ function stopRKey(evt) {
             if ((evt.keyCode == 13) && (node.type == "text")) {
                 return false;
             }
-        }        
+        }       
+        
+function getValores(idLista){
+	
+	var valores=[]
+	var lista = document.getElementById(idLista);
+	
+	for (var i = 0; i < lista.options.length; ++i) {
+        valores[i] = lista.options[i].value;
+    }
+    return valores;
+}         
