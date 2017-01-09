@@ -113,3 +113,25 @@ function moveDown(idlista) {
 			}
        }
 }
+
+ function getHora() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+           
+            var ampm = 24;
+
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            var strTime = hours + ':' + minutes + ':' + ampm;
+            return date.getFullYear() + "." + date.getMonth() + "." + date.getDate() + " " + strTime;
+
+
+        }
+        
+function stopRKey(evt) {
+            var evt = (evt) ? evt : ((event) ? event : null);
+            var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+            if ((evt.keyCode == 13) && (node.type == "text")) {
+                return false;
+            }
+        }        

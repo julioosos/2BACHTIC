@@ -2,60 +2,13 @@
 
 <title>Formulario web</title>
 <meta charset="UTF-8">
-
-<!--Inicio del encabezado-->
-
-
-
-    <!--Esto no es un script-->
-    <script type="text/javascript">
-        var ahora = new Date()
-        dias = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves",
-            "Viernes", "Sabado");
-
-    </script>
-
-    <script type="text/javascript">
-        function getHora() {
-            var date = new Date();
-            var hours = date.getHours();
-            var minutes = date.getMinutes();
-           
-            var ampm = 24;
-
-            minutes = minutes < 10 ? '0' + minutes : minutes;
-            var strTime = hours + ':' + minutes + ':' + ampm;
-            return date.getFullYear() + "." + date.getMonth() + "." + date.getDate() + " " + strTime;
-
-
-        }
-
-        alert(getHora());
-    </script>
-
-    <script language=javascript type=text/javascript>
-        function stopRKey(evt) {
-            var evt = (evt) ? evt : ((event) ? event : null);
-            var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
-            if ((evt.keyCode == 13) && (node.type == "text")) {
-                return false;
-            }
-        }
-        document.onkeypress = stopRKey;
-    </script>
-
-    <!--Arriba en realidad no hay nada es fruto de tu imaginación-->
-
-
-    <script src="js/script.js"></script>
-    <script type="text/javascript" src="/js/reorderSelect.js"></script>
     <link rel="shortcut icon" href="./img/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/estilo.css" />
 
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="/js/reorderSelect.js"></script>
+
 </head>
-<!--Fin del encabezado-->
-
-
 
 <body bgcolor=#82ABB7>
     <br> </br>
