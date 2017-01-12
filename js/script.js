@@ -146,3 +146,30 @@ function getValores(idLista){
     }
     return valores;
 }         
+
+/* Patrón comando */
+
+function sumar(x, y) { return x + y; }
+
+var Comando = function (accion, valores) {
+    
+    this.accion = accion;
+    this.valores = valores;
+	
+	return {
+        ejecutar: function () {
+			
+			// IDEA reflección para conocer el número de parámetros aceptados y 
+			//		lanzar error si se proporciona un número distinto de parámetros
+			
+			// TODO poner el nombre (accion) en consola del comando que se está ejecutando
+			// TODO bucle para pasar los parámetros a la función que vamos a invocar 
+			//		(en lugar de acceder por posición como hacemos actualmente)
+            
+            console.log("Ejecutamos con valores ("+valores+") = "+accion(valores[0],valores[1]));
+        }
+    }
+}
+var comandoSumar = function (valor) {
+    return new Comando(sumar, valor);
+};

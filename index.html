@@ -1,12 +1,14 @@
-<html lang="es-ES">
+<html>
 
-<title>Formulario web</title>
-<meta charset="UTF-8">
-    <link rel="shortcut icon" href="./img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+<head>
+	<title>Formulario web</title>
+	<meta charset="UTF-8">
 
-    <script src="js/script.js"></script>
-    <script type="text/javascript" src="/js/reorderSelect.js"></script>
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css" />
+
+	<script src="js/script.js"></script>
+	<script type="text/javascript" src="js/reorderSelect.js"></script>
 
 </head>
 
@@ -76,7 +78,7 @@
                         <td class="d">
 
 
-                            <div class="procesar" onclick="Procesar()"><a href="#" class="tooltip"><p class="procesar2">Procesar</p></a>
+                            <div class="procesar" onclick="Procesar('valores','texto')"><a href="#" class="tooltip"><p class="procesar2">Procesar</p></a>
                                
                             </div>
 
@@ -91,8 +93,8 @@
             <p>&nbsp;</p>
         </form>
     </div>
-    <script>
-        document.onkeypress = stopRKey;
+    <script type="text/javascript">
+		document.onkeypress = stopRKey;
     </script>
 </body>
 

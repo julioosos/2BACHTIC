@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
     function moveUp(selectId) {
         var selectList = document.getElementById(selectId);
         var selectOptions = selectList.getElementsByTagName('option');
@@ -24,4 +24,4 @@
             }
         }
     }
-</script>
+

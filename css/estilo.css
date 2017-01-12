@@ -25,7 +25,7 @@
    width: 80%;
     }
    div {
-    cursor:url(cursor.png),pointer;
+    cursor:url(../img/cursor.png),pointer;
 	font-family:Trebuchet MS;
     }
 .f {
