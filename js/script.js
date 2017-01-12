@@ -162,12 +162,20 @@ var Comando = function (accion, valores) {
 			// IDEA reflección para conocer el número de parámetros aceptados y 
 			//		lanzar error si se proporciona un número distinto de parámetros
 			
-			// TODO poner el nombre (accion) en consola del comando que se está ejecutando
-            
-            console.log("Ejecutamos con valores ("+valores+") = "+accion.apply(null,valores));
+            console.log("Ejecutamos "+accion.name+ "("+valores+") = "+accion.apply(null,valores));
         }
     }
 }
+
 var comandoSumar = function (valor) {
     return new Comando(sumar, valor);
 };
+
+/*
+ 
+	// Ejemplo de uso
+
+	var a=new comandoSumar([3,7]);
+	a.ejecutar();
+
+*/
