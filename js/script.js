@@ -149,8 +149,6 @@ function getValores(idLista){
 
 /* Patrón comando */
 
-function sumar(x, y) { return x + y; }
-
 var Comando = function (accion, valores) {
     
     this.accion = accion;
@@ -175,8 +173,11 @@ var Comando = function (accion, valores) {
 }
 
 var comandoSumar = function (valor) {
+	
+	function sumar(x, y) { return x + y; }
+	
     return new Comando(sumar, valor);
-};
+}
 
 /*
  
