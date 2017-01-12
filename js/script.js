@@ -163,10 +163,8 @@ var Comando = function (accion, valores) {
 			//		lanzar error si se proporciona un número distinto de parámetros
 			
 			// TODO poner el nombre (accion) en consola del comando que se está ejecutando
-			// TODO bucle para pasar los parámetros a la función que vamos a invocar 
-			//		(en lugar de acceder por posición como hacemos actualmente)
             
-            console.log("Ejecutamos con valores ("+valores+") = "+accion(valores[0],valores[1]));
+            console.log("Ejecutamos con valores ("+valores+") = "+accion.apply(null,valores));
         }
     }
 }
