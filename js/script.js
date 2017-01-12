@@ -159,10 +159,17 @@ var Comando = function (accion, valores) {
 	return {
         ejecutar: function () {
 			
-			// IDEA reflección para conocer el número de parámetros aceptados y 
-			//		lanzar error si se proporciona un número distinto de parámetros
+			// Nos aseguramos que se proporcionan valores para todos
+			// los parámetros de entrada que tenga el comando
 			
+			// OJO Sólo cuenta los parámetros previos al primero que 
+			// tenga un valor por defecto [https://goo.gl/HossM7]
+			
+			if (accion.length != valores.length)
+				throw "El comando "+accion.name+"(...) esperaba "+accion.length+" parametros de entrada y ha recibido "+valores.length;
+            
             console.log("Ejecutamos "+accion.name+ "("+valores+") = "+accion.apply(null,valores));
+            
         }
     }
 }
