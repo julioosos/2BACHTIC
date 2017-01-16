@@ -77,10 +77,10 @@ function Anadir(idlista, valor) {
 
 }
 
-function Procesar(idAccion, idValores, idTexto) {
-    var valores = document.getElementById(idAccion);
+function Procesar_(idvalor2, idtexto) {
+    var valores = document.getElementById(idvalor2);
     var seleccionado = valores.options.selectedIndex;
-    document.getElementById(idTexto).innerHTML = "Procesando " + valores.options[seleccionado].value;
+    document.getElementById(idtexto).innerHTML = "Procesando " + valores.options[seleccionado].value;
 }
 
 function mostrarMensaje(idTexto, valor) {
@@ -146,43 +146,22 @@ function getValores(idLista){
     return valores;
 }         
 
-/* Patrón comando */
 
-var Comando = function (accion, valores) {
-    
-    this.accion = accion;
-    this.valores = valores;
+
+
+function ProcesarDonRafael() {
+	var valores = getValores('valores');
+	acumulador = 0;
+	restador = 0;
+    for (i = 0; i < valores.length; i++) {
+		var val = parseInt(valores[i]);
+		if (valores[i] > 0 ) {
+		acumulador=acumulador+val;
+		}
+		else {
+		restador=restador+val;
+		}
+	}
 	
-	return {
-        ejecutar: function () {
-			
-			// Nos aseguramos que se proporcionan valores para todos
-			// los parámetros de entrada que tenga el comando
-			
-			// OJO Sólo cuenta los parámetros previos al primero que 
-			// tenga un valor por defecto [https://goo.gl/HossM7]
-			
-			if (accion.length != valores.length)
-				throw "El comando "+accion.name+"(...) esperaba "+accion.length+" parametros de entrada y ha recibido "+valores.length;
-            
-            console.log("Ejecutamos "+accion.name+ "("+valores+") = "+accion.apply(null,valores));
-            
-        }
-    }
+	alert('la suma de los números positivos son '+acumulador+' la suma de los numeros negativos son '+restador);
 }
-
-var comandoSumar = function (valor) {
-	
-	function sumar(x, y) { return x + y; }
-	
-    return new Comando(sumar, valor);
-}
-
-/*
- 
-	// Ejemplo de uso
-
-	var a=new comandoSumar([3,7]);
-	a.ejecutar();
-
-*/
