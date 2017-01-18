@@ -147,6 +147,25 @@ function getValores(idLista){
 }         
 
 
+function ProcesarAlberto() {
+	var val = getValores('valores');
+	var alberto = document.getElementById("alberto");
+	var acumpar = 0
+	var acumimpar = 0
+	for ( i = 0; i < val.length; i++) {
+/* 
+ * -------------------------------------------------------------------------------------------------------------------
+ * numero%2 = 0 significa que ese número al dividirlo entre 2, el resto es 0. Los números pares cumplen esta condición
+ * -------------------------------------------------------------------------------------------------------------------
+ */
+		if (val[i]%2 == 0) {
+		acumpar=acumpar+1;
+		} else {
+		acumimpar=acumimpar+1;
+		}
+	}
+		alert("Hay " + acumpar + " números pares" + "\nHay " + acumimpar + " números impares");
+}
 
 
 function ProcesarDonRafael() {
