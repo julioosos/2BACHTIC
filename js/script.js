@@ -33,11 +33,12 @@ function Limpiar(idlista) {
 
 }
 
-function limpiarMensajes {
-	var inputs = document.frm.getElementsByTagName("input");
-for(var i=0;i<inputs.length;i++){
-inputs[i].value = "";
-}
+function limpiarMensajes (idTexto) {
+	var inputs = document.frm.getElementsByTagName("idlista");
+	
+    for (var i = 0; i < idlista.length; ++i){
+          inputs[i] = "";
+    }
 }
 
 function Borrar(idlista) {
