@@ -85,11 +85,11 @@ function Anadir(idlista, valor) {
 
 }
 
-function Procesar_(idvalor2, idtexto) {
-    var valores = document.getElementById(idvalor2);
+function Procesar(idAccion, idValores, idTexto) {
+	var valores = document.getElementById(idAccion);
     var seleccionado = valores.options.selectedIndex;
-    document.getElementById(idtexto).innerHTML = "Procesando " + valores.options[seleccionado].value;
-}
+    document.getElementById(idTexto).innerHTML = "Procesando " + valores.options[seleccionado].value;
+ }
 
 function mostrarMensaje(idTexto, valor) {
     document.getElementById(idTexto).innerHTML += valor + "&#13;&#10;"; // Agrego nueva linea antes
